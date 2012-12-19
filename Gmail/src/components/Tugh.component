@@ -1,0 +1,23 @@
+<!-- Component:myComponent -->
+<apex:component controller="EmailPreview" access="global">
+    <apex:attribute name="myValue" description="This is the value for the component." 
+        type="String" assignTo="{!AccId}"  />	
+
+		<apex:dataTable value="{!OppData}" var="exp">	
+			<apex:column >
+				<apex:facet name="header">Name</apex:facet>
+				<apex:outputText value="{!exp.Name}"/>
+			</apex:column>	
+	
+			<apex:column >
+				<apex:facet name="header">Close Date</apex:facet>
+				<apex:outputText value="{!exp.CloseDate}"/> 
+			</apex:column>
+			
+			<apex:column >
+				<apex:facet name="header">Stage Name</apex:facet>
+				<apex:outputText value="{!exp.StageName}"/>					
+			</apex:column> 
+		</apex:dataTable>	
+
+</apex:component>

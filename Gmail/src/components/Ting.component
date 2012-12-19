@@ -1,0 +1,8 @@
+<apex:component access="global">
+  <!-- Begin Default Content REMOVE THIS -->
+
+  <h1>Salesforce.com    </h1>
+    No software.. only brainwear...!
+  <!-- End Default Content REMOVE THIS -->
+
+</apex:component>
